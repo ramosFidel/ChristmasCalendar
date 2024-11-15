@@ -2,15 +2,24 @@ document.querySelector('.day-1').addEventListener('click', function() {
   confetti();
 });
 
-document.querySelector('.day-2').addEventListener('click', function() {
+
+
+document.getElementById("musicRene").addEventListener("change", function () {
   const audio = document.getElementById("audio");
-  audio.play();
-  setTimeout(() => {
+  if (this.checked) {
+    audio.play();
+  } else {
     audio.pause();
-    audio.currentTime = 0; 
-  }, 8000);
+  }
 });
-document.querySelector('.day-3').addEventListener('click', function() {
+document.getElementById("musicToggle").addEventListener("change", function () {
+  const music = document.getElementById("music");
+
+  if (this.checked) {
+    music.play();
+  } else {
+    music.pause();
+  }
 });
 document.querySelector('.day-4').addEventListener('click', function() {
 });

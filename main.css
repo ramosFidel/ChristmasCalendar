@@ -34,3 +34,13 @@
     font-size: 8px;
   }
 }
+.calendar-grid :checked ~ .title-max {
+  opacity: 1;
+  transform: translateY(45px);
+  pointer-events: all;
+}
+.calendar-grid :checked ~ .title-min{
+  opacity: 1;
+  transform: translateY(15px);
+  pointer-events: all;
+}
