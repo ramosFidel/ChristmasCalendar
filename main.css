@@ -39,6 +39,11 @@
   transform: translateY(45px);
   pointer-events: all;
 }
+.calendar-grid :checked ~ .title-mid{
+  opacity: 1;
+  transform: translateY(25px);
+  pointer-events: all;
+}
 .calendar-grid :checked ~ .title-min{
   opacity: 1;
   transform: translateY(15px);
